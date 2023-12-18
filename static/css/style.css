@@ -1,0 +1,113 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+.btn { display: inline-block; *display: inline; *zoom: 1; padding: 4px 10px 4px; margin-bottom: 0; font-size: 13px; line-height: 18px; color: #333333; text-align: center;text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75); vertical-align: middle; background-color: #f5f5f5; background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6); background-image: -ms-linear-gradient(top, #ffffff, #e6e6e6); background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6)); background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6); background-image: -o-linear-gradient(top, #ffffff, #e6e6e6); background-image: linear-gradient(top, #ffffff, #e6e6e6); background-repeat: repeat-x; filter: progid:dximagetransform.microsoft.gradient(startColorstr=#ffffff, endColorstr=#e6e6e6, GradientType=0); border-color: #e6e6e6 #e6e6e6 #e6e6e6; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); border: 1px solid #e6e6e6; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); cursor: pointer; *margin-left: .3em; }
+.btn:hover, .btn:active, .btn.active, .btn.disabled, .btn[disabled] { background-color: #e6e6e6; }
+.btn-large { padding: 9px 14px; font-size: 20px; line-height: normal; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; }/* The font size defines the size of text of the button*/
+.btn:hover { color: #0c0101; text-decoration: none; background-color: #e6e6e6; background-position: 0 -15px; -webkit-transition: background-position 0.1s linear; -moz-transition: background-position 0.1s linear; -ms-transition: background-position 0.1s linear; -o-transition: background-position 0.1s linear; transition: background-position 0.1s linear; }
+.btn-primary, .btn-primary:hover { text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); color: #ffffff; } /* This defines the color of the button */
+.btn-primary.active { color: rgba(255, 255, 255, 0.75); }
+.btn-primary { background-color: #4a77d4; background-image: -moz-linear-gradient(top, #6eb6de, #4a77d4); background-image: -ms-linear-gradient(top, #6eb6de, #4a77d4); background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#6eb6de), to(#4a77d4)); background-image: -webkit-linear-gradient(top, #6eb6de, #4a77d4); background-image: -o-linear-gradient(top, #6eb6de, #4a77d4); background-image: linear-gradient(top, #6eb6de, #4a77d4); background-repeat: repeat-x; filter: progid:dximagetransform.microsoft.gradient(startColorstr=#6eb6de, endColorstr=#4a77d4, GradientType=0);  border: 1px solid #3762bc; text-shadow: 1px 1px 1px rgba(0,0,0,0.4); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.5); }
+.btn-primary:hover, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] { filter: none; background-color: #4a77d4; }
+.btn-block { width: 60%; display:block;position: absolute;
+	top: 139%;
+	left: 20%; 	 }
+
+/* This defines if the box of the output is potable  */
+.b {
+	position: absolute;
+	top: 155%;
+	left: 20%;
+	border: 1px solid blue;
+	background-color: white;
+	padding: 10px;
+	-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; /*increasing the radius makes the box of the output more round in the corners */
+	width: 60%;
+  }
+  .link1 {position: absolute;
+	top: 40%;
+	left: -75%;
+  }
+  .link2 {position: absolute;
+	top: 10%;
+	left: -75%;
+  }
+
+  .tableauPlaceholder{
+	top: -60%;
+	left: -95%;
+  }
+
+* { -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -ms-box-sizing:border-box; -o-box-sizing:border-box; box-sizing:border-box; }
+
+html { width: 100%; height:100%; overflow:hidden; }
+
+body { 
+	width: 100%;
+	height:100%;
+	font-family: 'Raleway',sans-serif';
+	color: rgb(0, 0, 0);
+	font-size: 24px;
+	text-align:center;
+	letter-spacing:1.4px;
+
+}
+.login { 
+	position: absolute;
+	top: 25%;
+	left: 35%; /* This defines if the box is more to the left side, 50% is in the middle */
+	margin: -150px 0 0 -150px;
+	width:400px;
+	height:400px;
+}
+/* This defines the color of the title */
+.login h1 { color: rgb(6, 37, 179); text-shadow: 0 0 10px rgba(0, 0, 0, 0.3); letter-spacing:1px; text-align:center; }
+
+/* This defines the style of the title, dimensions,font etc */
+h1 { color: #ffffff; font-family: 'Raleway',sans-serif; font-size: 40px; font-weight: 800; line-height: 72px; margin: 0 0 24px; text-align: center; text-transform: uppercase;font-family: consolas;
+	border: 4px solid #2321ad;
+	border-radius: 25px; } /* the border 4px defines how thick is the box arround the title and the box have the color blue*/
+
+
+
+input { 
+	width: 60%; 
+	margin-bottom: 10px; 
+	background: solid rgba(0,0,0,0.3);
+	border: none;
+	outline: none;
+	padding: 10px;
+	font-size: 13px;
+	color: rgb(12, 0, 0);
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+	border: 1px solid rgba(0,0,0,0.3);
+	border-radius: 4px;
+	box-shadow: inset 0 -5px 45px rgba(10, 0, 0, 0.2), 0 1px 1px rgba(255,255,255,0.2);
+	-webkit-transition: box-shadow .5s ease;
+	-moz-transition: box-shadow .5s ease;
+	-o-transition: box-shadow .5s ease;
+	-ms-transition: box-shadow .5s ease;
+	transition: box-shadow .5s ease;
+}
+input:focus { box-shadow: inset 0 -5px 45px rgba(14, 0, 0, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2); }
+
+/* This defines the color of the text inside the input boxes */
+input::placeholder {
+	color: rgb(8, 0, 0);
+	font-size: 1.2em;
+	font-style: italic;
+  }
+
+
+  .c {
+	position: absolute;
+	top: 169%;
+	left: -130%;
+	border: 1px solid blue;
+	background-color: white;
+	padding: 0px;
+	-webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; /*increasing the radius makes the box of the output more round in the corners */
+	width: 400%; height: 40%;
+	color: rgb(8, 0, 0);
+	font-size: 21px;
+	font-style: Arial;
+  }
+ 

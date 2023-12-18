@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Water quality</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  
+
+</head>
+
+
+</Title>  
+</Head>  
+<Body background='https://img2.goodfon.com/original/1920x1080/0/97/water-mineral-commercial.jpg'>   
+    
+</Body>       
+ <div class="login">
+	<h1>Water quality</h1>
+    
+    
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+    	<input type="text" name="pH" placeholder="pH" required="required" />
+        <input type="text" name="Hardness" placeholder="Hardness (mg/l)" required="required" />
+		<input type="text" name="Solids" placeholder="Solids (mg/l)" required="required" />
+        <input type="text" name="Chloramines" placeholder="Chloramines (mg/l)" required="required" />
+    <input type="text" name="Sulfate" placeholder="Sulfate (mg/l)" required="required" />
+        <input type="text" name="Conductivity" placeholder="Conductivity lS/cm" required="required" />
+    <input type="text" name="Organic carbon" placeholder="Organic carbon (mg)" required="required" />
+        <input type="text" name="Trihalomethanes" placeholder="Trihalomethanes (ppm)" required="required" />
+    <input type="text" name="Turbidity" placeholder="Turbidity (NTU)" required="required" />
+
+    <br>
+    
+    
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict water potability</button>
+        
+    </form>
+    <div class="b">Potable Water: {{ prediction_text }}</div>
+   <br>
+   <div class="c"> <br><b>Try this values:</b></br> <b>Potable water:</b> pH= 6.5 Hardness= 0 Solids = 700 Chloramines= 3 Sulfate= 0 Conductivity= 300 Organic carbon= 1 Trihalomethanes= 70 Turbidity= 4 </br> <b>Non Potable water:</b> pH=9 Hardness=500 Solids=1100 Chloramines=5 Sulfate=0 Conductivity=400 Organic carbon=2 Trihalomethanes=80 Turbidity=5</div>
+
+
+
+ 
+
+</body>
+</html>
+
+
+
+
+<!-- NEW CODE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->		
+
+
