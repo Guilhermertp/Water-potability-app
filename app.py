@@ -1,3 +1,5 @@
+"""
+
 import numpy as np
 from flask import Flask, request, jsonify, render_template
 import pickle
@@ -38,3 +40,22 @@ def results():
 
 if __name__ == "__main__":
     app.run(debug=True)
+"""
+
+
+
+"""Flask App Project."""
+
+from flask import Flask, jsonify
+app = Flask(__name__)
+
+
+@app.route('/')
+def index():
+    """Return homepage."""
+    json_data = {'Hello': 'World!'}
+    return jsonify(json_data)
+
+
+if __name__ == '__main__':
+    app.run()
